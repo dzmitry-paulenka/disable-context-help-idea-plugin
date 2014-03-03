@@ -1,0 +1,40 @@
+<idea-plugin version="2">
+  <id>com.dpaulenk.idea.contexthelp</id>
+  <name>Disable Idea Context Help button</name>
+  <version>1.0</version>
+  <vendor email="fantasteg@gmail.com" url="http://github.com/fantast">Dzmitry Paulenka</vendor>
+
+  <description><![CDATA[
+        This plugin disables idea context help functionality, which is quite annoying, when launched accidentally from various tool windows.
+    ]]></description>
+
+  <change-notes><![CDATA[
+          Initial version
+    ]]>
+  </change-notes>
+
+  <!-- please see http://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
+  <idea-version since-build="131"/>
+
+  <!-- please see http://confluence.jetbrains.com/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <application-components>
+  </application-components>
+
+  <project-components>
+    <!-- Add your project components here -->
+  </project-components>
+
+  <actions>
+  </actions>
+
+  <extensions defaultExtensionNs="com.intellij">
+      <applicationService overrides="true"
+                          serviceInterface="com.intellij.openapi.help.HelpManager"
+                          serviceImplementation="com.dpaulenk.idea.contexthelp.DisabledHelpManager"/>
+  </extensions>
+</idea-plugin>
