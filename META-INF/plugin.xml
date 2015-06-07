@@ -1,6 +1,6 @@
 <idea-plugin version="2">
   <id>com.dpaulenk.idea.contexthelp</id>
-  <name>Disable Idea Context Help button</name>
+  <name>Disable context help</name>
   <version>1.0</version>
   <vendor email="fantasteg@gmail.com" url="http://github.com/fantast">Dzmitry Paulenka</vendor>
 
