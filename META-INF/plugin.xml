@@ -1,16 +1,28 @@
 <idea-plugin version="2">
   <id>com.dpaulenk.idea.contexthelp</id>
   <name>Disable context help</name>
-  <version>1.0</version>
+  <version>1.0.1</version>
   <vendor email="fantasteg@gmail.com" url="http://github.com/fantast">Dzmitry Paulenka</vendor>
 
   <description><![CDATA[
         This plugin disables idea context help functionality, which is quite annoying, when launched accidentally from various tool windows.
     ]]></description>
 
-  <change-notes><![CDATA[
-          Initial version
-    ]]>
+  <change-notes>
+      <![CDATA[
+          <ul>
+            <li>1.00
+              <ol>
+                <li>Initial version.</li>
+              </ol>
+            </li>
+            <li>1.0.1
+              <ol>
+                <li>Add log message on click.</li>
+              </ol>
+            </li>
+          </ul>
+      ]]>
   </change-notes>
 
   <!-- please see http://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
